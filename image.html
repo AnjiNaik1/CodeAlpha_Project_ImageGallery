@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>image gallery </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="full-img" id="fullImgBox">
+            <img src="" id="fillImg">
+            <span onclick="closeFullImg()">X</span>
+        </div>
+        <div class="img-gallery">
+            <img src="/home/v-anji-naik-6302597254/Music/CodeAlpha_Project_Image gallery/img9.jpeg" onclick="openFullImg(this.src)">
+            <img src="/home/v-anji-naik-6302597254/Music/CodeAlpha_Project_Image gallery/img10.jpeg"onclick="openFullImg(this.src)">
+            <img src="/home/v-anji-naik-6302597254/Music/CodeAlpha_Project_Image gallery/img11.jpeg"onclick="openFullImg(this.src)">
+            <img src="/home/v-anji-naik-6302597254/Music/CodeAlpha_Project_Image gallery/img12.jpeg"onclick="openFullImg(this.src)">
+            <img src="/home/v-anji-naik-6302597254/Music/CodeAlpha_Project_Image gallery/img13.jpeg"onclick="openFullImg(this.src)">
+            <img src="/home/v-anji-naik-6302597254/Music/CodeAlpha_Project_Image gallery/img14.jpeg"onclick="openFullImg(this.src)">
+            
+            
+
+             
+        </div>
+        <script>
+            var fullImgBox=document.getElementById("fullImgBox");
+            var fullImg=document.getElementById("fillImg");
+            function openFullImg(pic){
+                fullImgBox.style.display="flex"; 
+                fullImg.src=pic;  
+            }
+            function closeFullImg(){
+            fullImgBox.style.display="none"; 
+            }
+
+        </script>
+    </body>
+</html>
